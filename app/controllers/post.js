@@ -24,4 +24,9 @@ export default class PostController extends Controller {
     toggleBody() {
         this.toggleProperty('isShowingBody');
     }
+
+    @action
+    submitAction() {
+        alert(`${this.get('name')} said ${this.get('comment')}`);
+    }
 }
