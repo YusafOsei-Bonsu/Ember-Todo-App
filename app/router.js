@@ -15,4 +15,5 @@ Router.map(function() {
     this.route("new", { path: "/new" });
     this.route('post', { path: ":post_id" });
   });
+  this.route('post');
 });
