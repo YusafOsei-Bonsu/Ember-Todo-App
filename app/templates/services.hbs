@@ -1,1 +1,6 @@
-<h2>Services</h2>
+<h2 class="title">Services</h2>
+<ul>
+{{#each @model as |service|}}
+    <li>{{service}}</li>
+{{/each}}
+</ul>
