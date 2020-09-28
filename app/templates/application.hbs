@@ -1,11 +1,10 @@
-<h1>Welcome to our App</h1>
-<nav>
-    <ul>
-        <li>{{#link-to 'index'}}Home{{/link-to}}</li>
-        <li>{{#link-to 'about'}}About{{/link-to}}</li>
-        <li>{{#link-to 'services'}}Services{{/link-to}}</li>
-        <li>{{#link-to 'contact'}}Contact{{/link-to}}</li>
-    </ul>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+    <li class="nav-item nav-link">{{#link-to 'index'}}Home{{/link-to}}</li>
+    <li class="nav-item nav-link">{{#link-to 'about'}}About{{/link-to}}</li>
+    <li class="nav-item nav-link">{{#link-to 'services'}}Services{{/link-to}}</li>
+    <li class="nav-item nav-link">{{#link-to 'contact'}}Contact{{/link-to}}</li>
+  </ul>
 </nav>
 {{!-- This is where inner templates are rendered --}}
 {{outlet}} 
