@@ -19,4 +19,9 @@ export default class PostController extends Controller {
     sayHello() {
         alert("Hello world!");
     }
+
+    @action
+    toggleBody() {
+        this.toggleProperty('isShowingBody');
+    }
 }

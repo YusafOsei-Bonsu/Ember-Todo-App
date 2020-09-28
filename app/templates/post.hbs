@@ -1,5 +1,7 @@
-<h2 class="title">{{ this.title }}</h2>
-<p>{{ this.body }}</p>
+<h2 class="title" {{action 'toggleBody' on="click"}}>{{ this.title }}</h2>
+{{#if isShowingBody}}
+    <p>{{ this.body }}</p>
+{{/if}}
 <p>
     <strong>Authors: </strong>
     {{#each this.authors as |author|}}
@@ -12,4 +14,4 @@
     <li>{{comment.comment}} by <em>{{comment.name}}</em></li>
 {{/each}}  
 </ul>
-<button {{action 'sayHello' on="click"}}>Say Hello World</button>
+<button id="sayHelloBtn" {{action 'sayHello' on="click"}}>Say Hello World</button>
