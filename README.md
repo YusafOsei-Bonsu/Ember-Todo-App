@@ -28,3 +28,4 @@ You will need the following things properly installed on your computer.
 | Blockers | Resolutions |
 |----------|-------------|
 | How to pass data from controller into template | [Ember.js tutorial for beginners #03 Router & Controller (2020)](https://www.youtube.com/watch?v=Toz-zPkzUgM) |
+| `Experimental support for decorators is a feature that is subject to change in a future release. Set the 'experimentalDecorators' option in your 'tsconfig' or 'jsconfig' to remove this warning.` | File > Preferences > Settings > Search "Javascript.ImplicitProjectConfig.ExperimentalDecorators" > Press the below checkbox (enable/disable) |

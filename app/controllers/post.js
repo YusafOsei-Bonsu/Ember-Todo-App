@@ -1,4 +1,5 @@
 import Controller from '@ember/controller';
+import { action } from '@ember/object';
 
 export default class PostController extends Controller {
     get title() {
@@ -14,4 +15,8 @@ export default class PostController extends Controller {
         return this.model.comments;
     }
     
+    @action
+    sayHello() {
+        alert("Hello world!");
+    }
 }
