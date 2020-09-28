@@ -15,3 +15,14 @@
 {{/each}}  
 </ul>
 <button id="sayHelloBtn" {{action 'sayHello' on="click"}}>Say Hello World</button>
+
+<hr>
+
+<h4>Add Comment</h4>
+<form {{action 'submitAction' on="submit"}}>
+    <label for="name">Name:</label>
+    <p>{{input value=name}}</p>
+    <label for="comment">Comment:</label>
+    <p>{{textarea value=comment}}</p>
+    <button type="submit">Submit</button>
+</form>
