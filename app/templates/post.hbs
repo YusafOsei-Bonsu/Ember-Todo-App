@@ -1,28 +1,31 @@
-<h2 class="title" {{action 'toggleBody' on="click"}}>{{ this.title }}</h2>
-{{#if isShowingBody}}
-    <p>{{ this.body }}</p>
-{{/if}}
-<p>
-    <strong>Authors: </strong>
-    {{#each this.authors as |author|}}
-        {{ author }},
-    {{/each}}
-</p>
-<h4>Comments</h4>
-<ul>
-{{#each this.comments as |comment|}}
-    <li>{{comment.comment}} by <em>{{comment.name}}</em></li>
-{{/each}}  
-</ul>
-<button id="sayHelloBtn" {{action 'sayHello' on="click"}}>Say Hello World</button>
+<main>
+    <h2 class="title" {{action 'toggleBody' on="click"}}>{{ this.title }}</h2>
+    <p>Created on {{ this.created }}</p>
+    {{#if isShowingBody}}
+        <p>{{ this.body }}</p>
+    {{/if}}
+    <p>
+        <strong>Authors: </strong>
+        {{#each this.authors as |author|}}
+            {{ author }},
+        {{/each}}
+    </p>
+    <h4>Comments</h4>
+    <ul>
+    {{#each this.comments as |comment|}}
+        <li>{{comment.comment}} by <em>{{comment.name}}</em></li>
+    {{/each}}  
+    </ul>
+    <button id="sayHelloBtn" {{action 'sayHello' on="click"}}>Say Hello World</button>
 
-<hr>
+    <hr>
 
-<h4>Add Comment</h4>
-<form {{action 'submitAction' on="submit"}}>
-    <label for="name">Name:</label>
-    <p>{{input value=name}}</p>
-    <label for="comment">Comment:</label>
-    <p>{{textarea value=comment}}</p>
-    <button type="submit">Submit</button>
-</form>
+    <h4>Add Comment</h4>
+    <form {{action 'submitAction' on="submit"}}>
+        <label for="name">Name:</label>
+        <p>{{input value=name}}</p>
+        <label for="comment">Comment:</label>
+        <p>{{textarea value=comment}}</p>
+        <button type="submit">Submit</button>
+    </form>
+</main>

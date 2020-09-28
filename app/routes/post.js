@@ -5,6 +5,7 @@ export default class PostRoute extends Route {
         return {
             title: "My blog post",
             body: "This is the body of my blog post",
+            created: new Date(),
             authors: ["William", "Robert", "Michelle"],
             comments: [
                 {

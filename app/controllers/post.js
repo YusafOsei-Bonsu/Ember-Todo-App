@@ -14,6 +14,9 @@ export default class PostController extends Controller {
     get comments() {
         return this.model.comments;
     }
+    get created() {
+        return this.model.created;
+    }
     
     @action
     sayHello() {
