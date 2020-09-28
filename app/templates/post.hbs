@@ -1,1 +1,14 @@
-<h2 class="title">Blog Post</h2>
+<h2 class="title">{{ this.title }}</h2>
+<p>{{ this.body }}</p>
+<p>
+    <strong>Authors: </strong>
+    {{#each this.authors as |author|}}
+        {{ author }},
+    {{/each}}
+</p>
+<h4>Comments</h4>
+<ul>
+{{#each this.comments as |comment|}}
+    <li>{{comment.comment}} by <em>{{comment.name}}</em></li>
+{{/each}}  
+</ul>
