@@ -18,7 +18,7 @@ Router.map(function() {
   this.route('post');
   this.route('cars', function() {
     this.route('new');
-    this.route('edit');
+    this.route('edit', {path: "/edit/:car_id"});
   });
   this.route('users');
 });
