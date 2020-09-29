@@ -7,5 +7,6 @@ export default class CarsController extends Controller {
         // Deletes a certain car
         let car = this.store.peekRecord('car', id);
         car.destroyRecord();
+        car.save();
     }
 }

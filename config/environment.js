@@ -3,6 +3,19 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'my-app',
+    contentSecurityPolicy: {
+      'connect-src': "'self' wss://*.firebase.com"
+    },
+    firebase: {
+      apiKey: "AIzaSyDB7U3rIrljRaZQ0YR555iHUdJhKZe5Cqk",
+      authDomain: "ember-cars.firebaseapp.com",
+      databaseURL: "https://ember-cars.firebaseio.com",
+      projectId: "ember-cars",
+      storageBucket: "ember-cars.appspot.com",
+      messagingSenderId: "720133446170",
+      appId: "1:720133446170:web:c07e6efe0c516db5cfcfa3",
+      measurementId: "G-NV9HXFDLV3"
+    },
     environment,
     rootURL: '/',
     locationType: 'auto',
@@ -16,7 +29,6 @@ module.exports = function(environment) {
         Date: false
       }
     },
-
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

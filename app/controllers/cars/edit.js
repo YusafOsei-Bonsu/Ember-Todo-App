@@ -14,7 +14,7 @@ export default class CarsEditController extends Controller {
             car.set('make', make);
             car.set('model', model);
             car.set('year', year);
-            // car.save();
+            car.save();
             self.transitionToRoute('cars');
         })
         .catch((err) => {
