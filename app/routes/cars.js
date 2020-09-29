@@ -1,28 +1,10 @@
 import Route from '@ember/routing/route';
-
-let cars = [
-    {
-        "id": 1,
-        "make": "Honda",
-        "model": "Accord",
-        "year": "2007"
-    },
-    {
-        "id": 2,
-        "make": "Toyota",
-        "model": "Camry",
-        "year": "2013"
-    },
-    {
-        "id": 3,
-        "make": "Ford",
-        "model": "Explorer",
-        "year": "2002"
-    },
-]
+import axios from 'axios';
 
 export default class CarsRoute extends Route {
-    model() {
+    async model() {
+        const response = await axios.get('/cars.json');
+        const cars = response.data;
         return cars;
     }
 }
