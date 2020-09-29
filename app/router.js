@@ -16,4 +16,5 @@ Router.map(function() {
     this.route('post', { path: ":post_id" });
   });
   this.route('post');
+  this.route('cars');
 });
