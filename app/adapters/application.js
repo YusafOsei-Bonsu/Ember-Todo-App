@@ -1,8 +1,7 @@
-import RESTAdapter from '@ember-data/adapter/rest';
+import FirestoreAdapter from 'emberfire/adapters/firestore';
 
-export default RESTAdapter.extend({
-    host: "/cars.json?json=?",
-    shouldReloadAll() {
-        return true;
-    }
+export default FirestoreAdapter.extend({
+    // Uncomment the following lines to enable offline persistence and multi-tab support
+    // enablePersistence: true,
+    // persistenceSettings: { synchronizeTabs: true }
 });
