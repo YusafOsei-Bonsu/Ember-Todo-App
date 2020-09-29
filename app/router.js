@@ -17,4 +17,5 @@ Router.map(function() {
   });
   this.route('post');
   this.route('cars');
+  this.route('users');
 });
