@@ -1,2 +1,11 @@
-<h2 class="title left-space">GitHub</h2>
-<MyGithubRepos @model />
+<h2 class="title left-space panel-title">My GitHub Repos</h2>
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <MyGithubRepos @model={{@model}}/>
+        </div>
+        <div class="col-md-8">
+            {{outlet}}
+        </div>
+    </div>
+</div>
