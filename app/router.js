@@ -19,4 +19,5 @@ Router.map(function() {
     this.route('edit', {path: "/edit/:car_id"});
   });
   this.route('users');
+  this.route('github');
 });
