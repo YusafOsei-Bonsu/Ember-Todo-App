@@ -2,9 +2,9 @@
     <h2 class="title">{{@title}} {{this.name}}</h2>
     {{yield}}  {{!-- Displays content between the starting and ending Component tag --}}
     {{#unless greetingSet}}
-        <button style="margin-left: 20px;" {{action 'greetUser' this.name}}>Greet User</button>
+        <button class="left-space" {{action 'greetUser' this.name}}>Greet User</button>
     {{/unless}}
     {{#if greetingSet}}
-        <h6 style="margin-left: 20px;">You have been greeted</h6>
+        <h6 class="left-space">You have been greeted</h6>
     {{/if}}
 </div>

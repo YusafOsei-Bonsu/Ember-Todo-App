@@ -13,11 +13,10 @@ main {
     font-family: 'Quicksand', sans-serif;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
     font-size: 40px;
 }
 
-p {
+.left-space {
     margin-left: 20px;
 }
 
