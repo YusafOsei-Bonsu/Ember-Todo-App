@@ -20,3 +20,10 @@ main {
 p {
     margin-left: 20px;
 }
+
+.well {
+    background-color: #f4f4f4;
+    border: #ccc 1px solid;
+    padding: 20px;
+    width: 500px;
+}
