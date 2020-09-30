@@ -1,7 +1,14 @@
 # my-app
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project represents an application that was derived from completing section 1-6 on the following Udemy course: *Build Web Apps Using EmberJS: The Complete Course*.
+
+Below are the sections I completed (in order):
+1. Introduction
+2. Getting Started With Ember
+3. Routing with Ember
+4. Templates & Controllers
+5. Models & Data
+6. Components
 
 ## Prerequisites
 
