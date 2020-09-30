@@ -22,3 +22,13 @@
     padding: 20px;
     width: 500px;
 }
+
+.container > .row {
+    padding: 10px;
+}
+
+.row {
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    padding: 5px;
+}
