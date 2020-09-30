@@ -1,1 +1,5 @@
-{{yield}}
+<ul>
+    {{#each @model as |repo|}}
+        <li>{{repo.name}}</li>
+    {{/each}}
+</ul>
